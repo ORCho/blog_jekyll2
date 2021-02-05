@@ -1,0 +1,13 @@
+---
+title: Chloe's Blog
+---
+<html>
+  <h1>Hello I am blogging</h1>  
+
+    <h3>{{ page.title }}</h3>
+    
+    {% for post in site.posts %}
+    <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+{% endfor %}
